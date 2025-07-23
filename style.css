@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.circle{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: absolute;
+    animation: slide 8s ease-in-out  infinite;
+    /* animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+}
+.circle1{
+   animation-delay: 1s;
+   background-color: crimson;
+}
+.circle2{
+   animation-delay: 1.1s;
+    background-color: rgb(130, 220, 20);
+}
+.circle3{
+   animation-delay: 1.2s;
+    background-color: rgb(34, 23, 26);
+}
+.circle4{
+   animation-delay: 1.3s;
+    background-color: rgb(197, 220, 20);
+}
+.circle5{
+   animation-delay: 1.4s;
+    background-color: rgb(220, 20, 190);
+}
+.circle6{
+   animation-delay: 1.5s;
+    background-color: rgb(20, 177, 220);
+} 
+
+@keyframes slide{
+   0%{
+    top: 0;
+    left: 0;
+    /* background-color: rgb(219, 238, 7); */
+
+   }
+   25%{
+    top: 0;
+    left: 30rem;
+    /* background-color: rgb(61, 222, 7); */
+    /* transform: rotate(90deg);  */
+   
+   }
+   50%{
+    top: 30rem;
+    left: 30rem;
+     /* transform: rotate(180deg); */
+     /* background-color: blueviolet; */
+
+   }
+   75%{
+    left: 0;
+    top: 30rem;
+    /* background-color: rgb(236, 10, 184); */
+      /* transform: rotate(270deg); */
+   }
+   100%{
+    left: 0;
+    top: 0;
+    /* background-color: black; */
+    /* transform: rotate(360deg);  */
+   }
+}  
